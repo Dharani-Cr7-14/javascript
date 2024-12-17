@@ -1,0 +1,57 @@
+<style>
+    .Main_outer {
+        width: 300px;
+        border: 1px solid blue;
+        padding: 10px; /* Added padding for better spacing */
+    }
+    .inner1 {
+        margin: 5px 0;
+        display: flex;
+        align-items: center; /* Vertically center align items */
+    }
+    .text {
+        width: 80px; /* Fixed width for labels */
+        text-align: right; /* Right-align labels */
+        margin-right: 10px; /* Space between label and input */
+    }
+    .input {
+        flex: 1; /* Allow input to take the remaining space */
+        text-align: center;
+        padding: 5px; /* Added padding for better UX */
+    }
+    .inner2 {
+        text-align: center;
+        margin-top: 10px; /* Space above the button */
+    }
+</style>
+
+<div class="Main_outer">
+    <div class="inner1">
+        <t class="text">Name:</t>
+        <input class="input" placeholder="Enter the name" />
+    </div>
+
+    <div class="inner1">
+        <t class="text">Age:</t>
+        <input class="input" type="number" placeholder="Enter the age" />
+    </div>
+
+    <div class="inner1">
+        <t class="text">Gender:</t>
+        <input class="input" placeholder="Enter the gender" />
+    </div>
+
+    <div class="inner1">
+        <t class="text">Course:</t>
+        <input class="input" placeholder="Enter the course name" />
+    </div>
+
+    <div class="inner1">
+        <t class="text">E-Mail:</t>
+        <input class="input" type="email" placeholder="Enter the email" />
+    </div>
+
+    <div class="inner2">
+        <button>Save</button>
+    </div>
+</div>

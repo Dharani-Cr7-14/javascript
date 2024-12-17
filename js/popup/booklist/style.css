@@ -1,0 +1,118 @@
+*{
+   padding: 0;
+   margin: 0;
+   
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    
+    
+}
+.navbar{
+    background-color: blueviolet;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.book-container{
+    border-radius: 10px;
+
+    padding: 20px;
+    margin: 40px;
+    width: 30%;
+    background-color: black;
+    color: aliceblue;
+    display: inline-block;
+    vertical-align: top;
+}
+.container-button{
+    color: rgb(7, 7, 7);
+    background-color: palevioletred;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 3px;
+}
+h1{
+    color: palevioletred;
+}
+h3{
+    color: palevioletred;
+
+}
+.add-button{
+
+    background-color: palevioletred;
+    color: black;
+    font-size: 70px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    
+}
+.popup-overlay{
+   
+    background-color: rgb(178, 182, 182);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0.88;
+    display: none;
+}
+.popup{
+
+    z-index: 3;
+    position: absolute;
+    width: 32%;
+    padding: 20px;
+    top: 150px;
+    left: 200px;
+    background-color: black;
+    color: rgb(49, 135, 210);
+    border-radius: 20px;
+    display: none;
+
+}
+.popup-add{
+    background-color: aliceblue;
+    color: palevioletred;
+    font-size: 22px;
+}
+.popup-remove{
+    background-color: aliceblue;
+    color: palevioletred;
+    font-size: 22px;
+}
+
+.popup input{
+   width: 100%;
+   font-size: 20px;
+   border: none;
+   border-bottom:solid black 1px;
+}
+
+.popup textarea{
+    width: 100%;
+    font-size: 20px;
+ }
+ .popup input::placeholder{
+    color: rgb(65, 60, 60);
+    text-align: left;
+    padding-left: 5px;
+ }
+ .popup textarea::placeholder{
+    color: rgb(65, 60, 60);
+    text-align: left;
+    padding-left: 5px;
+
+ }
+ .popup input:focus{
+    outline-color: blueviolet;
+ }

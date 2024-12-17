@@ -1,0 +1,123 @@
+<style>
+    .Main_outer{
+        width: 300px;
+       height: auto;
+       border: 2px solid rgb(16, 16, 17);
+       padding: 4px;
+      
+       
+        
+    }
+    .inner1{
+       margin: 5px 0;
+       margin-right: 10px;
+        border: 2px solid rgb(117, 57, 57);
+        display: flex;
+        padding: 5px;
+    }
+    .inner2{
+        background-color: aqua;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 2px solid rgb(145, 89, 89);
+        display: block;
+        text-align: center;
+    }
+    .text{
+        border: 1px solid gray;
+        text-align: center;
+        padding-inline-start: 5px;
+        padding-inline-end: 3px;
+        margin-right:1px;
+    }
+
+    .input{
+        margin-left:0px;
+        text-align: center;
+        width: 210px;
+        
+    }
+    .in_inner1{
+        margin: auto;
+    }
+    
+
+</style>
+
+
+
+<div class="Main_outer" >
+
+
+    <div class="inner1">
+        <t class="text">name</t>
+        <div class="in_inner1">
+            <input class="input" placeholder="enter the name">
+        </div>
+    </div>
+
+    <div class="inner1">
+        <t  class="text">Age</t>
+        <div class="in_inner1">
+            <input  class="input" placeholder="enter the age">
+        </div>
+    </div>
+
+    <div class="inner1">
+        <t  class="text">Gender</t>
+        <div class="in_inner1">
+            <input  class="input" placeholder="enter the sex">
+        </div>
+    </div>
+
+    <div class="inner1">
+        <t  class="text">Course</t>
+        <div class="in_inner1">
+            <input   class="input"placeholder="enter the course name">
+        </div>
+    </div>
+
+    <div class="inner1">
+        <t  class="text">E-Mail</t>
+        <div class="in_inner1">
+            <input   class="input" placeholder="enter the Mail id">
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+    <div class="inner2">
+        <button onclick="change()" class="save_but">Save</button>
+    </div>
+
+
+</div>
+
+
+<h1 class ="en_name">name</h1>
+<h1>email</h1>
+
+
+
+
+<script>
+    var in_name=document.getElementsByClassName("input")
+    var af_name=document.getElementsByClassName("en_name")
+     console.log(in_name)
+    function change()
+    {
+        for(i=0;i<in_name.length;i++)
+    {
+        console.log(in_name[i])
+    }
+      af_name.textContent=in_name.value
+    }
+     
+
+
+
+
+
+</script>

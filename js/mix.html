@@ -1,0 +1,26 @@
+<input Id="num1" value="2" >
+<input id="num2" value="3">
+<button onclick="change()">Add</button>
+<p id="result">Answer</p>
+
+
+<script>
+ var a= document.getElementById("num1")
+ var b= document.getElementById("num2")
+ var c=document.getElementById("result")
+ 
+ console.log(a.value)
+ console.log(b.value)
+
+
+
+
+function change()
+{
+    var ans=Number(a.value)+Number(b.value)
+    console.log(ans.value)
+    c.textContent=ans
+
+}
+
+</script>

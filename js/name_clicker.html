@@ -1,0 +1,29 @@
+<h1 id="print">
+  click the button
+</h1>
+
+<button id="button1" onclick="changer(event)">
+    john
+</button>
+<button id="button2" onclick="changer(event)">
+    praveen
+</button>
+<button id="button3" onclick="changer(event)">
+    karthi
+</button>
+
+
+<script>
+
+    var button1=document.getElementById("button1")
+    var button2=document.getElementById("button2")
+    var button3=document.getElementById("button3")
+    var h1=document.getElementById("print")
+
+    function changer(event)
+    {
+      h1.textContent=event.target.textContent
+    }
+    
+
+</script>  

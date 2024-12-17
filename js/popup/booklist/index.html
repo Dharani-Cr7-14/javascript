@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make A ShortBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<body>
+    <div class="navbar">
+    <h1>BookList</h1>
+    </div>
+
+    <div class="container"> 
+      <div class="book-container">
+        <h2 >THE GOAT</h2>
+        <h5>DHARANI</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae doloribus recusandae voluptatem temporibus minima natus adipisci aperiam delectus consequuntur. Voluptatum, amet autem voluptatem eum id nulla iure eos quia earum?</p>
+         <button onclick="deleting(event)" class="container-button">DELETE</button>
+      </div>
+    </div>
+      
+      
+
+      
+    
+      <div class="popup-overlay"> </div>
+      <div class="popup">
+        <h2>ADD BOOK</h2>
+         <form>
+
+            <input type="text" onfocus="this.value='' " placeholder="book title" id="book-title-input" class="arrow-togglable">>
+            <input type="text"  onfocus="this.value='' " placeholder="book author" id="book-author-input" class="arrow-togglable">>
+            <textarea  onfocus="this.value='' " placeholder="short discription" id="book-description-input" ></textarea>
+            <button class="popup-add">Add</button>
+            <button onclick="remove_pop(event)" class="popup-remove">Remove</button>
+
+
+         </form>
+    
+    </div> 
+    
+    <button onclick="add_the_pop()" class=" add-button">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
